@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Manusia{
    int umur=26;
 
@@ -21,9 +23,21 @@ class Manusia{
    System.out.println("Manusia gila itu menjambak ibunya dengan" + joget + "sekali");
   }
 
+  void masukkanUmur() {
+    Scanner scanner = new Scanner(System.in);
+    umur = scanner.nextInt();
+  }
+
+  void tampilkanUmur() {
+    System.out.print("Masukkan umur :");
+    masukkanUmur();
+   System.out.println("Umur bapak ini adalah " + umur );
+  }
+
+
  public static void main(String[] args) {
   Manusia manusia = new Manusia();
-  manusia.menjambak (12);
+  manusia.tampilkanUmur ();
 
  }
 

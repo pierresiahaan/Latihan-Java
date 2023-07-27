@@ -31,7 +31,7 @@ class Manusia{
   void tampilkanUmur() {
     System.out.print("Masukkan umur :");
     masukkanUmur();
-   System.out.println("Umur bapak ini adalah " + umur );
+   System.out.println("Umur bapak ini adalah " + umur + " tahun");
   }
 
 

@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 class Mobil {
+    int unit=12;
+    
     int jumlahPintu=5;
 
     int jumlahBan=5;
@@ -45,10 +49,20 @@ class Mobil {
         jumlahPintu = pintuBaru ;
     }
 
+    void masukkanUnit() {
+        Scanner scanner = new Scanner (System.in);
+        unit = scanner.nextInt();
+    }
+
+    void tampilkanUnit() {
+    System.out.print("Masukkan unit yang ingin dibeli :");
+    masukkanUnit();
+    System.out.println("Unit yang dibeli sebanyak " + unit + " unit");
+    }
+   
     public static void main(String[] args){
     Mobil mobil = new Mobil ();
-    mobil.ubahJumlahPintu (10);
-    mobil.tampilanJumlahPintu ();
+    mobil.tampilkanUnit ();
     }
 
 }
